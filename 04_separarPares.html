@@ -8,10 +8,18 @@
     //ENTRADA
 
     let listaDeItens = [1, "João", "Eduardo", "Joice", 3, 5, 6, 8, "Maria", 5.6, 10];
-    let numPares = [];
 
     //PROCESSAMENTO
 
+     let pares = [];
+    for (numero of listaDeItens) {
+        if ((numero % 2) === 0) {
+            pares.push(numero);
+             }
+    }
+    alert(`Os números pares são: ${pares}`);
+    alert(`A quantidade de números pares é: ${pares.length}`);
+    alert(`A quantidade de elementos da lista original é: ${listaDeItens.length}`);
 
     //SAÍDA
 

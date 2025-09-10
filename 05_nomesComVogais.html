@@ -7,8 +7,22 @@
 
     //ENTRADA
 
+    let listaDeNomes = ["Amanda", "Eduardo", "Fábio", "Evelin", "César", "José", "Ivo", "Eva", "Otávio", "Inez", "Osmar", "Ulisses"];
+
     //PROCESSAMENTO
 
+    let nomeComVogais = [];
+    let primeiraLetra = [];
+
+    for (let nome of listaDeNomes) {
+        let primeiraLetra = nome.charAt(0).toUpperCase();
+        if ("AEIOU".includes(primeiraLetra))
+        nomeComVogais.push(nome)
+    }
+        nomeComVogais.sort();
+
     //SAÍDA
+
+    alert(`Os nomes que começam com vogal são: ${nomeComVogais}`);
 
 </script>
