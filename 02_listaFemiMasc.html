@@ -12,7 +12,22 @@
 
     //PROCESSAMENTO
 
+    let masculino = [];
+    let feminino = [];
+
+    for (let nome of listaDeNomes) {
+        let genero = prompt(`${nome} é um nome feminino ou masculino? (use (F) para feminino e (M) para masculino)`).toUpperCase().trim();
+        if (genero === `F`) {
+            feminino.push(nome);
+        }
+        else if (genero === `M`) {
+            masculino.push(nome);
+        }
+    }
     
     //SAÍDA
+
+    alert(`A lista de nomes femininos é: ${feminino.join(`, `)}.`);
+    alert(`A lista de nomes masculinos é: ${masculino.join(`, `)}.`);
 
 </script>

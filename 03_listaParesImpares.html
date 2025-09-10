@@ -8,10 +8,27 @@
 
     //ENTRADA
 
+    let listaDeNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
     //PROCESSAMENTO
 
+    numPares = [];
+    numImpares = [];
+
+    for (let num of listaDeNumeros) {
+        if (num % 2 == 0) {
+            numPares.push(num);
+        }
+        else {
+            numImpares.push(num);
+        }
+    }
 
     //SAÍDA
+
+    alert(`A lista de números pares e crescentes é: ${numPares.sort((a, b) => a-b).join(`, `)}.`);
+    alert(`A lista de números pares decrescente é: ${numPares.sort((a, b) => b-a).join(`, `)}.`);
+    alert(`A lista de números impares crescente é: ${numImpares.sort((a, b) => a-b).join(`, `)}.`);
+    alert(`A lista de números impares decrescente é: ${numImpares.sort((a, b) => b-a).join(`, `)}.`);
 
 </script>

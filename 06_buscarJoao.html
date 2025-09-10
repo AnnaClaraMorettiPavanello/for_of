@@ -7,8 +7,23 @@
 
     //ENTRADA
 
+    let listaDeNomes = ["João Pedro", "Gabriel José", "Ulisses Joao", "Pedro Henrique", "João da Silva", "João Henrique", "Alisson João"];
+
     //PROCESSAMENTO
-    
+
+    let listaJoaos = [];
+    for (let nome of listaDeNomes) {
+        if (nome.toUpperCase().replace("Ã", "A").indexOf("JOAO") >= 0) {
+            listaJoaos.push(nome);
+        }
+    }
+
     //SAÍDA
+
+    document.write(listaJoaos.join(", "));
+
+    for (let joao of listaJoaos) {
+        document.write(`<li>${joao}</li>`);   
+    }
 
 </script>
